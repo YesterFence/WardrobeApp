@@ -5,19 +5,44 @@ WDD x99 Project
 Clone repository at https://github.com/YesterFence/WardrobeApp
 
 In terminal, copy and paste the following:
-```
-npm install expo
-npm install @react-navigation/native @react-navigation/native-stack
-expo install react-native-screens react-native-safe-area-context
-expo install expo-image-picker
-expo install @react-native-async-storage/async-storage
-```
 
-If updating is needed:
-npm update
-npm install @latest
+```bash
+    - npx expo start
+```
 
 ## Phone
 1. Install Expo Go (Android/iOS).
 2. npx expo start -> scan QR with Expo Go.
 3. Use the Add Clothing screen to pick/take a photo and add tags — it should appear on the Home screen.
+
+
+
+---
+# Special Thanks to:
+## Expo app 👋
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+
+## Get started
+
+1. Install dependencies
+
+   ```bash
+   npm install
+   ```
+
+2. Start the app
+
+   ```bash
+   npx expo start
+   ```
+
+3. Reset the App
+
+    ```bash
+    npm run reset-project
+    ```
