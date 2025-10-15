@@ -41,8 +41,9 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npx expo start
    ```
 
-3. Reset the App
+3. Update the Expo software
 
-    ```bash
-    npm run reset-project
-    ```
+   ```bash
+   npx expo install --fix
+   npx expo-doctor
+   ```
