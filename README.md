@@ -47,3 +47,13 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npx expo install --fix
    npx expo-doctor
    ```
+
+4. Other installs
+
+   ```bash
+   npx expo install expo-image
+   npx expo install expo-image-picker
+   npx expo install react-native-view-shot expo-media-library
+   npm install dom-to-image
+
+   ```
