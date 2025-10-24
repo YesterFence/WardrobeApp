@@ -1,5 +1,5 @@
 # WardrobeApp
-WDD x99 Project
+[WDD x99 Project](app\(tabs)\index.tsx)
 
 ## Installations
 Clone repository at https://github.com/YesterFence/WardrobeApp
@@ -55,5 +55,7 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npx expo install expo-image-picker
    npx expo install react-native-view-shot expo-media-library
    npm install dom-to-image
+   npx expo install expo-file-system expo-image-picker
+   npm install @react-native-async-storage/async-storage
 
    ```

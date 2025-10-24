@@ -17,7 +17,7 @@ export default function TabsLayout() {
         },
     }}
     >
-        <Tabs.Screen name="home" 
+        <Tabs.Screen name="index" 
         options={{ 
             title: 'Home',
             tabBarIcon: ({ color, focused }) => (
@@ -29,7 +29,7 @@ export default function TabsLayout() {
             ),
         }} 
         />
-        <Tabs.Screen name="index" 
+        <Tabs.Screen name="upload" 
         options={{ 
             title: 'Picture',
             tabBarIcon: ({ color, focused }) => (
@@ -41,24 +41,37 @@ export default function TabsLayout() {
             ),
         }} 
         />
-        <Tabs.Screen name="calendar" 
+        <Tabs.Screen name="wardrobe" 
         options={{ 
-            title: 'About', 
+            title: 'Wardrobe', 
             tabBarIcon: ({ color, focused }) => (
                 <Ionicons 
-                    name={focused ? 'calendar' : 'calendar-outline'} 
+                    name={focused ? 'briefcase' : 'briefcase-outline'} 
                     color={color} 
                     size={24}
                 />
             ),
         }} 
         />
-       <Tabs.Screen name="about" 
+        
+       <Tabs.Screen name="filter" 
         options={{ 
-            title: 'About', 
+            title: 'Filter', 
             tabBarIcon: ({ color, focused }) => (
                 <Ionicons 
-                    name={focused ? 'information-circle' : 'information-circle-outline'} 
+                    name={focused ? 'grid' : 'grid-outline'} 
+                    color={color} 
+                    size={24}
+                />
+            ),
+        }} 
+        />
+        <Tabs.Screen name="calendar" 
+        options={{ 
+            title: 'Calendar', 
+            tabBarIcon: ({ color, focused }) => (
+                <Ionicons 
+                    name={focused ? 'calendar' : 'calendar-outline'} 
                     color={color} 
                     size={24}
                 />
