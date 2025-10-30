@@ -55,7 +55,10 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npx expo install expo-image-picker
    npx expo install react-native-view-shot expo-media-library
    npm install dom-to-image
-   npx expo install expo-file-system expo-image-picker
+   npx expo install expo-file-system 
+   npx expo install expo-image-picker
    npm install @react-native-async-storage/async-storage
+   npm install uuid
+   npm install react-native-get-random-values
 
    ```
