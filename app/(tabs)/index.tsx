@@ -1,4 +1,3 @@
-// app/(tabs)/index.tsx (renamed from home.tsx)
 import { useRouter } from 'expo-router';
 import React from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';

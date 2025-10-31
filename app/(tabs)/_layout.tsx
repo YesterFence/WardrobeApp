@@ -1,5 +1,6 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { Tabs } from 'expo-router';
+import 'react-native-get-random-values';
 
 /* Adds Sections Tabs to app */
 export default function TabsLayout() {
