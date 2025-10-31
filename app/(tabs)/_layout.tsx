@@ -1,20 +1,21 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { Tabs } from 'expo-router';
 import 'react-native-get-random-values';
+import { StyleSheet } from 'react-native';
 
 /* Adds Sections Tabs to app */
 export default function TabsLayout() {
   return (
     <Tabs
     screenOptions={{
-        tabBarActiveTintColor: '#ffd33d',
+        tabBarActiveTintColor: '#FFE6A7',
         headerStyle: {
-            backgroundColor: '#25292e',
+            backgroundColor: '#432818',
         },
         headerShadowVisible: false,
         headerTintColor: '#fff',
         tabBarStyle: {
-            backgroundColor: '#25292e',
+            backgroundColor: '#432818',
         },
     }}
     >
@@ -82,3 +83,6 @@ export default function TabsLayout() {
     </Tabs>
   );
 }
+
+const styles = StyleSheet.create({
+});

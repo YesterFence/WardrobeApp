@@ -63,7 +63,7 @@ export default function WardrobeScreen() {
 
   return (
     <FlatList
-      style={{ backgroundColor: '#25292e' }}
+      style={{ backgroundColor: '#BB9457' }}
       contentContainerStyle={styles.listContainer}
       data={items}
       keyExtractor={(i) => i.id}
@@ -78,7 +78,7 @@ export default function WardrobeScreen() {
 }
 
 const styles = StyleSheet.create({
-  listContainer: { padding: 12, justifyContent: 'center' },
+  listContainer: { backgroundColor: '#BB9457', padding: 12, justifyContent: 'center' },
   card: { flex: 1, margin: 8, alignItems: 'center', justifyContent: 'center' },
   image: { width: 160, height: 220, borderRadius: 12 },
   empty: { flex: 1, alignItems: 'center', justifyContent: 'center' },
