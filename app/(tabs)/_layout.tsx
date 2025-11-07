@@ -3,6 +3,7 @@ import { Tabs, router } from "expo-router";
 import { Image, Pressable, StyleSheet } from "react-native";
 import "react-native-get-random-values";
 
+
 /* Adds Sections Tabs to app */
 export default function TabsLayout() {
   return (
