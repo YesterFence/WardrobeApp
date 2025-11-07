@@ -86,7 +86,7 @@ export default function WardrobeScreen() {
 
   return (
     <FlatList
-      style={{ backgroundColor: '#25292e' }}
+      style={{ backgroundColor: '#BB9457' }}
       contentContainerStyle={styles.listContainer}
       data={items}
       keyExtractor={(i) => i.id}
@@ -111,43 +111,9 @@ export default function WardrobeScreen() {
 }
 
 const styles = StyleSheet.create({
-  listContainer: { padding: 12, justifyContent: 'center' },
-  card: {
-    flex: 1,
-    margin: 8,
-    alignItems: 'center',
-    justifyContent: 'center',
-    position: 'relative',
-  },
-  image: {
-    width: 160,
-    height: 220,
-    borderRadius: 12,
-  },
-  tagContainer: {
-    position: 'absolute',
-    bottom: 6,
-    left: 6,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-  },
-  tag: {
-    backgroundColor: 'rgba(0,0,0,0.6)',
-    color: '#fff',
-    fontSize: 12,
-    borderRadius: 6,
-    paddingHorizontal: 5,
-    paddingVertical: 2,
-    marginRight: 4,
-  },
-  moreTag: {
-    backgroundColor: 'rgba(255,255,255,0.3)',
-    color: '#fff',
-    fontSize: 12,
-    borderRadius: 6,
-    paddingHorizontal: 5,
-    paddingVertical: 2,
-  },
+  listContainer: { backgroundColor: '#BB9457', padding: 12, justifyContent: 'center' },
+  card: { flex: 1, margin: 8, alignItems: 'center', justifyContent: 'center' },
+  image: { width: 160, height: 220, borderRadius: 12 },
   empty: { flex: 1, alignItems: 'center', justifyContent: 'center' },
   emptyText: { color: '#fff', marginBottom: 20, textAlign: 'center', paddingHorizontal: 16 },
 });

@@ -16,7 +16,7 @@ export default function Button({ label, theme, onPress, disabled = false }: Prop
                 styles.buttonContainer,
                 { 
                   borderWidth: 4, 
-                  borderColor: '#ffd33d', 
+                  borderColor: '#FFE6A7', 
                   borderRadius: 18 },
               ]}>
               <Pressable
