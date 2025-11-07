@@ -1,6 +1,8 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { Tabs } from 'expo-router';
+import { StyleSheet } from 'react-native';
 import 'react-native-get-random-values';
+
 
 /* Adds Sections Tabs to app */
 export default function TabsLayout() {
@@ -69,6 +71,7 @@ export default function TabsLayout() {
         />
         <Tabs.Screen name="calendar" 
         options={{ 
+
             title: 'Calendar', 
             tabBarIcon: ({ color, focused }) => (
                 <Ionicons 
@@ -79,6 +82,55 @@ export default function TabsLayout() {
             ),
         }} 
         />
+        
+      {/* <Tabs.Screen
+        name="calendar"
+        options={{
+          headerTitle: 'Calendar',
+          headerTitleAlign: 'left',
+          headerTitleStyle: styles.headerTitle,
+          headerLeft: () => (
+            <Pressable
+              onPress={() => router.push('/wardrobe')}
+              style={styles.iconButton}
+            >
+              <Image
+                source={require('../assets/icon.png')}
+                style={styles.iconImage}
+              />
+            </Pressable>
+          ),
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons
+              name={focused ? 'calendar' : 'calendar-outline'}
+              color={color}
+              size={24}
+            />
+          ),
+        }}
+      /> */}
+
     </Tabs>
-  );
-}
+
+)};
+
+const styles = StyleSheet.create({
+  header: {
+    backgroundColor: '#25292e',
+  },
+  tabBar: {
+    backgroundColor: '#25292e',
+  },
+  headerTitle: {
+    flex: 1,
+    textAlign: 'right',
+    marginRight: 20,
+  },
+  iconButton: {
+    marginLeft: 15,
+  },
+  iconImage: {
+    width: 24,
+    height: 24,
+  },
+});
