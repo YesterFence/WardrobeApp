@@ -60,5 +60,6 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npm install @react-native-async-storage/async-storage
    npm install uuid
    npm install react-native-get-random-values
-
+   npm install react-native-calendars
+   npm 
    ```
