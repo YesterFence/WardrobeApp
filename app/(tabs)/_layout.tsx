@@ -22,18 +22,23 @@ export default function TabsLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          headerTitle: "",
-          headerLeft: () => (
-            <Ionicons
-              name="person-circle-outline"
-              size={56}
-              color="#fff"
-              style={{ marginLeft: 20 }}
-              onPress={() => console.log("Profile pressed")}
-            />
-          ),
-          headerRight: () => (
-            <Text style={{ color: "#fff", fontSize: 35, marginRight: 20 }}>
+          // headerLeft: () => (
+          //   <Ionicons
+          //     name="person-circle-outline"
+          //     size={56}
+          //     color="#fff"
+          //     style={{ marginLeft: 20 }}
+          //     onPress={() => console.log("Profile pressed")}
+          //   />
+          // ),
+          headerTitle: () => (
+            <Text
+              style={{
+                color: "#fff",
+                fontSize: 26,
+                fontFamily: "Mogra_400Regular",
+              }}
+            >
               Clothes-Line
             </Text>
           ),
@@ -50,18 +55,23 @@ export default function TabsLayout() {
       <Tabs.Screen
         name="upload"
         options={{
-          headerTitle: "",
-          headerLeft: () => (
-            <Ionicons
-              name="person-circle-outline"
-              size={56}
-              color="#fff"
-              style={{ marginLeft: 20 }}
-              onPress={() => console.log("Profile pressed")}
-            />
-          ),
-          headerRight: () => (
-            <Text style={{ color: "#fff", fontSize: 35, marginRight: 20 }}>
+          // headerLeft: () => (
+          //   <Ionicons
+          //     name="person-circle-outline"
+          //     size={56}
+          //     color="#fff"
+          //     style={{ marginLeft: 20 }}
+          //     onPress={() => console.log("Profile pressed")}
+          //   />
+          // ),
+          headerTitle: () => (
+            <Text
+              style={{
+                color: "#fff",
+                fontSize: 26,
+                fontFamily: "Mogra_400Regular",
+              }}
+            >
               Clothes-Line
             </Text>
           ),
@@ -78,18 +88,23 @@ export default function TabsLayout() {
       <Tabs.Screen
         name="wardrobe"
         options={{
-          headerTitle: "",
-          headerLeft: () => (
-            <Ionicons
-              name="person-circle-outline"
-              size={56}
-              color="#fff"
-              style={{ marginLeft: 20 }}
-              onPress={() => console.log("Profile pressed")}
-            />
-          ),
-          headerRight: () => (
-            <Text style={{ color: "#fff", fontSize: 35, marginRight: 20 }}>
+          // headerLeft: () => (
+          //   <Ionicons
+          //     name="person-circle-outline"
+          //     size={56}
+          //     color="#fff"
+          //     style={{ marginLeft: 20 }}
+          //     onPress={() => console.log("Profile pressed")}
+          //   />
+          // ),
+          headerTitle: () => (
+            <Text
+              style={{
+                color: "#fff",
+                fontSize: 26,
+                fontFamily: "Mogra_400Regular",
+              }}
+            >
               Clothes-Line
             </Text>
           ),
@@ -106,18 +121,23 @@ export default function TabsLayout() {
       <Tabs.Screen
         name="filter"
         options={{
-          headerTitle: "",
-          headerLeft: () => (
-            <Ionicons
-              name="person-circle-outline"
-              size={56}
-              color="#fff"
-              style={{ marginLeft: 20 }}
-              onPress={() => console.log("Profile pressed")}
-            />
-          ),
-          headerRight: () => (
-            <Text style={{ color: "#fff", fontSize: 35, marginRight: 20 }}>
+          // headerLeft: () => (
+          //   <Ionicons
+          //     name="person-circle-outline"
+          //     size={56}
+          //     color="#fff"
+          //     style={{ marginLeft: 20 }}
+          //     onPress={() => console.log("Profile pressed")}
+          //   />
+          // ),
+          headerTitle: () => (
+            <Text
+              style={{
+                color: "#fff",
+                fontSize: 26,
+                fontFamily: "Mogra_400Regular",
+              }}
+            >
               Clothes-Line
             </Text>
           ),
@@ -134,18 +154,23 @@ export default function TabsLayout() {
       <Tabs.Screen
         name="calendar"
         options={{
-          headerTitle: "",
-          headerLeft: () => (
-            <Ionicons
-              name="person-circle-outline"
-              size={56}
-              color="#fff"
-              style={{ marginLeft: 20 }}
-              onPress={() => console.log("Profile pressed")}
-            />
-          ),
-          headerRight: () => (
-            <Text style={{ color: "#fff", fontSize: 35, marginRight: 20 }}>
+          // headerLeft: () => (
+          //   <Ionicons
+          //     name="person-circle-outline"
+          //     size={56}
+          //     color="#fff"
+          //     style={{ marginLeft: 20 }}
+          //     onPress={() => console.log("Profile pressed")}
+          //   />
+          // ),
+          headerTitle: () => (
+            <Text
+              style={{
+                color: "#fff",
+                fontSize: 26,
+                fontFamily: "Mogra_400Regular",
+              }}
+            >
               Clothes-Line
             </Text>
           ),
