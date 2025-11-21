@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
   card: { flex: 1, margin: 8, alignItems: 'center', justifyContent: 'center' },
   image: { width: 160, height: 220, borderRadius: 12 },
   empty: { flex: 1, alignItems: 'center', justifyContent: 'center' },
-  emptyText: { color: '#fff', marginBottom: 20, textAlign: 'center', paddingHorizontal: 16 },
+  emptyText: { color: '#000', marginBottom: 20 },
 });
 
 
