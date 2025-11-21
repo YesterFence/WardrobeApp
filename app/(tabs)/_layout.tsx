@@ -1,6 +1,6 @@
 import { Ionicons } from "@expo/vector-icons";
 import { Tabs, router } from "expo-router";
-import { Image, Pressable, StyleSheet } from "react-native";
+import { Pressable, StyleSheet } from "react-native";
 import "react-native-get-random-values";
 
 
