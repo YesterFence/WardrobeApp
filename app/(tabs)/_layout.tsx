@@ -119,6 +119,31 @@ export default function TabsLayout() {
       />
 
       <Tabs.Screen
+        name="create"
+        options={{
+          headerTitle: () => (
+            <Text
+              style={{
+                color: "#fff",
+                fontSize: 26,
+                fontFamily: "Mogra_400Regular",
+              }}
+            >
+              Clothes-Line
+            </Text>
+          ),
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons
+              name={focused ? "shirt" : "shirt-outline"}
+              color={color}
+              size={28}
+            />
+          ),
+          title: "Create",
+        }}
+      />
+
+      <Tabs.Screen
         name="filter"
         options={{
           // headerLeft: () => (
