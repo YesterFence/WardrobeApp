@@ -3,6 +3,7 @@ import { Tabs } from "expo-router";
 import { StyleSheet, Text } from "react-native";
 import "react-native-get-random-values";
 
+
 /* Adds Sections Tabs to app */
 export default function TabsLayout() {
   return (

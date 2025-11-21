@@ -5,9 +5,10 @@ type Props = {
   label: string;
   theme?: 'primary';
   onPress?: () => void;
+  disabled?: boolean;
 };
 
-export default function Button({ label, theme, onPress }: Props) {
+export default function Button({ label, theme, onPress, disabled = false }: Props) {
     if (theme === 'primary') {
         return (
             <View
@@ -19,7 +20,10 @@ export default function Button({ label, theme, onPress }: Props) {
                   borderRadius: 18 },
               ]}>
               <Pressable
-                style={[styles.button, { backgroundColor: '#fff' }]} onPress={onPress}>
+                style={[styles.button, { backgroundColor: '#fff', opacity: disabled ? 0.5 : 1 }]}
+                onPress={onPress}
+                disabled={disabled}
+                >
                 <FontAwesome name="picture-o" size={18} color="#25292e" style={styles.buttonIcon} />
                 <Text style={[styles.buttonLabel, { color: '#25292e' }]}>{label}</Text>
               </Pressable>
@@ -28,8 +32,12 @@ export default function Button({ label, theme, onPress }: Props) {
     }
   return (
     <View style={styles.buttonContainer}>
-      <Pressable style={styles.button} onPress={onPress}>
-        <Text style={styles.buttonLabel}>{label}</Text>
+      <Pressable
+        style={[styles.button, disabled && styles.disabledButton]}
+        onPress={onPress}
+        disabled={disabled}
+      >
+        <Text style={[styles.buttonLabel, disabled && styles.disabledText]}>{label}</Text>
       </Pressable>
     </View>
   );
@@ -58,5 +66,12 @@ const styles = StyleSheet.create({
   buttonLabel: {
     color: '#fff',
     fontSize: 16,
+  },
+  disabledButton: {
+    opacity: 0.5,
+    backgroundColor: '#6c6c6c',
+  },
+  disabledText: {
+    color: '#ccc',
   },
 });
