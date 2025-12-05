@@ -1,13 +1,24 @@
 // app/(tabs)/wardrobe.tsx
 
-import { useFocusEffect } from '@react-navigation/native';
-import { Image } from 'expo-image';
-import { useRouter } from 'expo-router';
-import React, { useCallback, useRef, useState } from 'react';
-import { FlatList, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import Button from '../../components/Button';
-import { ensureWardrobeFolderExists, listFilesInFolder, readFilterTags, readIndex, WardrobeItem, } from './storage';
-
+import { useFocusEffect } from "@react-navigation/native";
+import { Image } from "expo-image";
+import { useRouter } from "expo-router";
+import React, { useCallback, useRef, useState } from "react";
+import {
+  FlatList,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
+import Button from "../../components/Button";
+import {
+  ensureWardrobeFolderExists,
+  listFilesInFolder,
+  readFilterTags,
+  readIndex,
+  WardrobeItem,
+} from "./storage";
 
 export default function WardrobeScreen() {
   const [items, setItems] = useState<WardrobeItem[]>([]);
@@ -27,7 +38,12 @@ export default function WardrobeScreen() {
     // Build fallback list if index is empty
     let built: WardrobeItem[] = idx;
     if (idx.length === 0 && files.length > 0) {
-      built = files.map((f) => ({ id: f, uri: f, createdAt: Date.now(), tags: [] }));
+      built = files.map((f) => ({
+        id: f,
+        uri: f,
+        createdAt: Date.now(),
+        tags: [],
+      }));
     }
 
     // Load active filter tags from storage
@@ -72,13 +88,13 @@ export default function WardrobeScreen() {
       <View style={styles.empty}>
         <Text style={styles.emptyText}>
           {activeTags.length > 0
-            ? 'No clothes match your selected tags.'
-            : 'No clothes yet — add some to your Wardrobe.'}
+            ? "No clothes match your selected tags."
+            : "No clothes yet — add some to your Wardrobe."}
         </Text>
         <Button
           theme="primary"
           label="Upload Clothes"
-          onPress={() => router.push('/upload' as any)}
+          onPress={() => router.push("/upload" as any)}
         />
       </View>
     );
@@ -86,13 +102,17 @@ export default function WardrobeScreen() {
 
   return (
     <FlatList
-      style={{ backgroundColor: '#BB9457' }}
+      style={{ backgroundColor: "#BB9457" }}
       contentContainerStyle={styles.listContainer}
       data={items}
       keyExtractor={(i) => i.id}
       numColumns={2}
       renderItem={({ item }) => (
-        <TouchableOpacity style={styles.card} activeOpacity={0.9} onPress={() => handleTap(item)}>
+        <TouchableOpacity
+          style={styles.card}
+          activeOpacity={0.9}
+          onPress={() => handleTap(item)}
+        >
           <Image source={{ uri: item.uri }} style={styles.image} />
           {item.tags && item.tags.length > 0 && (
             <View style={styles.tagContainer}>
@@ -101,7 +121,9 @@ export default function WardrobeScreen() {
                   #{tag}
                 </Text>
               ))}
-              {item.tags.length > 2 && <Text style={styles.moreTag}>+{item.tags.length - 2}</Text>}
+              {item.tags.length > 2 && (
+                <Text style={styles.moreTag}>+{item.tags.length - 2}</Text>
+              )}
             </View>
           )}
         </TouchableOpacity>
@@ -111,14 +133,64 @@ export default function WardrobeScreen() {
 }
 
 const styles = StyleSheet.create({
-  listContainer: { backgroundColor: '#BB9457', padding: 12, justifyContent: 'center' },
-  card: { flex: 1, margin: 8, alignItems: 'center', justifyContent: 'center' },
-  image: { width: 160, height: 220, borderRadius: 12 },
-  empty: { flex: 1, alignItems: 'center', justifyContent: 'center' },
-  emptyText: { color: '#000', marginBottom: 20 },
+  listContainer: {
+    backgroundColor: "#BB9457",
+    padding: 12,
+    justifyContent: "center",
+  },
+
+  card: {
+    flex: 1,
+    margin: 8,
+    alignItems: "center",
+    justifyContent: "center",
+    position: "relative",
+  },
+
+  image: {
+    width: 160,
+    height: 220,
+    borderRadius: 12,
+  },
+
+  tagContainer: {
+    position: "absolute",
+    bottom: 6,
+    left: 6,
+    flexDirection: "row",
+    flexWrap: "wrap",
+  },
+
+  tag: {
+    backgroundColor: "rgba(0,0,0,0.6)",
+    color: "#fff",
+    fontSize: 12,
+    borderRadius: 6,
+    paddingHorizontal: 5,
+    paddingVertical: 2,
+    marginRight: 4,
+  },
+
+  moreTag: {
+    backgroundColor: "rgba(255,255,255,0.3)",
+    color: "#fff",
+    fontSize: 12,
+    borderRadius: 6,
+    paddingHorizontal: 5,
+    paddingVertical: 2,
+  },
+
+  empty: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+
+  emptyText: {
+    color: "#000",
+    marginBottom: 20,
+  },
 });
-
-
 
 // import { useFocusEffect } from '@react-navigation/native';
 // import { Image } from 'expo-image';

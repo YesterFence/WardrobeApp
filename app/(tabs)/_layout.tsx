@@ -130,7 +130,7 @@ export default function TabsLayout() {
                 fontFamily: "Mogra_400Regular",
               }}
             >
-              Clothes-Line
+              Let's Create an Outfit!
             </Text>
           ),
           tabBarIcon: ({ color, focused }) => (

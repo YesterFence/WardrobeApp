@@ -39,7 +39,7 @@
           }
         }
       ],
-      "expo-font"
+      "expo-font",
       "expo-web-browser"
     ],
     "experiments": {
