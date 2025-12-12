@@ -1,3 +1,5 @@
+// components/IconButton.tsx
+
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import { Pressable, StyleSheet, Text } from 'react-native';
 

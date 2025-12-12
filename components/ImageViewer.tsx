@@ -1,3 +1,5 @@
+// components/ImageViewer.tsx
+
 import { Image } from 'expo-image';
 import { ImageSourcePropType, StyleSheet } from 'react-native';
 

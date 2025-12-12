@@ -1,3 +1,5 @@
+// components/CircleButton.tsx
+
 import { Pressable, StyleSheet, Text, View, } from 'react-native';
 
 type Props = {

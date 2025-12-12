@@ -1,3 +1,5 @@
+// components/Button.tsx
+
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
