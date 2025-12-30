@@ -1,13 +1,32 @@
 // app/_layout.tsx
 
 import { ensureWardrobeFolderExists } from '@/lib/storage';
+import { Mogra_400Regular, useFonts } from '@expo-google-fonts/mogra';
 import { Stack } from 'expo-router';
+import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 
+SplashScreen.preventAutoHideAsync(); // Required before loading fonts
+
 export default function RootLayout() {
+  const [fontsLoaded] = useFonts({
+    Mogra_400Regular
+  });
+
   useEffect(() => {
+    // Create wardrobe folder once
     ensureWardrobeFolderExists();
   }, []);
+
+  useEffect(() => {
+    if (fontsLoaded) {
+      SplashScreen.hideAsync();
+    }
+  }, [fontsLoaded]);
+
+  if (!fontsLoaded) {
+    return null; // Keep splash screen up
+  }
 
   return (
     <Stack>
@@ -17,29 +36,30 @@ export default function RootLayout() {
   );
 }
 
+// import { ensureWardrobeFolderExists } from '@/lib/storage';
+// import { Mogra_400Regular, useFonts } from "@expo-google-fonts/mogra";
 // import { Stack } from 'expo-router';
-// import { StatusBar } from 'expo-status-bar';
-// import { LogBox } from 'react-native';
-
-// LogBox.ignoreAllLogs(true);
-
+// import { useEffect } from 'react';
 
 // export default function RootLayout() {
+  
+//   const [fontsLoaded] = useFonts({
+//     Mogra_400Regular
+//   })
+  
+//   useEffect(() => {
+//     if (fontsLoaded) {
+//       SplashScreen.hideAsync();
+//     }
+//   }, [frontsLoaded]);
+
+//     ensureWardrobeFolderExists();
+//   }, []);
+
 //   return (
-//     <>
-//       <StatusBar style='light'/>
-//       <Stack>
-//         <Stack.Screen 
-//         name="(tabs)" 
-//         options={{ 
-//           headerShown: false,
-//         }} 
-//         />
-//         <Stack.Screen 
-//         name="+not_found" 
-//         options={{}} 
-//         />
-//       </Stack>
-//     </>
+//     <Stack>
+//       <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+//       <Stack.Screen name="not_found" />
+//     </Stack>
 //   );
 // }

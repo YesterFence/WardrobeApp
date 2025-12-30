@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
   list: { flex: 1 },
   listContainer: { backgroundColor: '#BB9457', padding: 12 },
   card: { flex: 1, margin: 8, alignItems: 'center', justifyContent: 'center' },
-  image: { width: 160, height: 220, borderRadius: 12 },
+  image: { width: 150, height: 150, borderRadius: 12 },
   empty: { flex: 1, backgroundColor: '#BB9457', alignItems: 'center', justifyContent: 'center', padding: 20 },
   emptyText: { color: '#fff', fontSize: 18, marginBottom: 20, textAlign: 'center' },
   activeFilters: { backgroundColor: 'rgba(67, 40, 24, 0.3)', padding: 16, borderRadius: 12, marginBottom: 20, alignItems: 'center' },

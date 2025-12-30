@@ -45,7 +45,7 @@ export default function TabsLayout() {
             <Text
               style={{
                 color: "#fff",
-                fontSize: 26,
+                fontSize: 24,
                 fontFamily: "Mogra_400Regular",
               }}
             >
@@ -71,7 +71,7 @@ export default function TabsLayout() {
             <Text
               style={{
                 color: "#fff",
-                fontSize: 26,
+                fontSize: 24,
                 fontFamily: "Mogra_400Regular",
               }}
             >
@@ -97,7 +97,7 @@ export default function TabsLayout() {
             <Text
               style={{
                 color: "#fff",
-                fontSize: 26,
+                fontSize: 24,
                 fontFamily: "Mogra_400Regular",
               }}
             >
@@ -123,7 +123,7 @@ export default function TabsLayout() {
             <Text
               style={{
                 color: "#fff",
-                fontSize: 26,
+                fontSize: 24,
                 fontFamily: "Mogra_400Regular",
               }}
             >
@@ -149,7 +149,7 @@ export default function TabsLayout() {
             <Text
               style={{
                 color: "#fff",
-                fontSize: 26,
+                fontSize: 24,
                 fontFamily: "Mogra_400Regular",
               }}
             >
@@ -172,7 +172,7 @@ export default function TabsLayout() {
 
 const styles = StyleSheet.create({
   headerTitle: {
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: "bold",
   },
   iconButton: {
